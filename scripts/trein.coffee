@@ -30,7 +30,7 @@ module.exports = (robot) ->
 				all = _.union result.Storingen.Ongepland[0].Storing, result.Storingen.Gepland[0].Storing
 				final = ""
 				all.forEach (e) ->
-					if not e.Traject? or new RegExp(stations.join('|')).test e.Traject[0]
+					if not e.Traject? or new RegExp(stations.join '|').test e.Traject[0]
 						final = "#{final}\n *#{e.id[0]}*"
 						if e.Traject?
 							final = "#{final}\n Traject: #{e.Traject[0]}"
