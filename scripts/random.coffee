@@ -1,5 +1,8 @@
 module.exports = (robot) ->
 
+  robot.hear /dickhead/, (res) ->
+    res.send "https://www.youtube.com/watch?v=my7sxZ0KfHU"
+
   euros = ['Munnies!', '500 geld', 'Pas maar op voordat @berendjan.linde boos wordt :O', 'Euro\'s zijn awesome! :D']
   robot.hear /euro's/i, (res) ->
     res.send res.random euros

@@ -3,9 +3,6 @@ getGroup = (res) ->
   group = splitted[0].toUpperCase()
 
 module.exports = (robot) ->
-
-
-
   robot.respond /debug/i, (res) ->
     console.log res.envelope.room
 
