@@ -8,5 +8,6 @@
   "hubot-rules",
   "hubot-shipit",
   "hubot-darts",
-  "hubot-motivate"
+  "hubot-motivate",
+  "hubot-cron"
 ]
