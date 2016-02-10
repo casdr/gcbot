@@ -16,11 +16,11 @@ module.exports = (robot) ->
       if not result or result.length == 0
         msg.reply msg.random random_not_sure
       else
-        if result[1]['subpods'][0]['value'].length > 0
-          found = true
-          msg.reply result[1]['subpods'][0]['value']
         if result[1]['subpods'][0]['image'].length > 0
           found = true
           msg.reply result[1]['subpods'][0]['image']
+        if result[1]['subpods'][0]['value'].length > 0 and found is false
+          found = true
+          msg.reply result[1]['subpods'][0]['value']
       if not found
         msg.reply msg.random random_not_sure
