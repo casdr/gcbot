@@ -21,6 +21,6 @@ module.exports = (robot) ->
           msg.reply result[1]['subpods'][0]['value']
         if result[1]['subpods'][0]['image'].length > 0
           found = true
-          msg.send result[1]['subpods'][0]['image']
+          msg.reply result[1]['subpods'][0]['image']
       if not found
         msg.reply msg.random random_not_sure
